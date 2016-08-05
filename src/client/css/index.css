@@ -1,0 +1,29 @@
+#header {
+	font-family: cursive;
+	text-align: center;
+}
+
+#logo {
+	max-height: 100%;
+	max-width: 100%;
+	min-width: 25%
+}
+
+.heading {
+	font-family: cursive;
+	font-weight: bold;
+}
+
+.section {
+	font-family: verdana cursive;
+	font-size: 16px;
+	background-color: #D4D8D9;
+	height: 200px;
+	padding: 10px 10px 10px 10px;
+}
+
+#menu {
+	font-size: 16px;
+	font-family: verdana cursive;
+	font-weight: bold;
+}
