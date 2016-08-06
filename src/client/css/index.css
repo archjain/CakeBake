@@ -27,3 +27,9 @@
 	font-family: verdana cursive;
 	font-weight: bold;
 }
+
+.bakeImg img {
+  width: auto;
+  height: 350px;
+  max-height: 350px;
+}
