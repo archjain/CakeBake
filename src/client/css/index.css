@@ -1,18 +1,3 @@
-#header {
-	font-family: cursive;
-	text-align: center;
-	padding-bottom: 0px;
-	padding-left:0px;
-	padding-right:0px;
-
-}
-
-#logo {
-	max-height: 100%;
-	max-width: 100%;
-	min-width: 25%
-}
-
 .heading {
 	font-family: cursive;
 	font-weight: bold;
@@ -24,12 +9,6 @@
 	background-color: #ff9999;
 	height: 350px;
 	padding: 20px 20px 20px 20px;
-}
-
-#menu {
-	font-size: 16px;
-	font-family: verdana cursive;
-	font-weight: bold;
 }
 
 #contactform {
@@ -45,13 +24,4 @@
   max-height: 350px;
 
 }
-.divTheme{
-	background-color:#ff9999;
 
-}
-.buttonTheme{
-	background-color:#ff5050;
-	font-weight: bold;
-	font-size: 20px;
-	color:white;
-}

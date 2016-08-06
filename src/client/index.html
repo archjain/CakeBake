@@ -8,6 +8,7 @@
 
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css\index.css">	
+	<link rel="stylesheet" type="text/css" href="css\application.css">	
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -17,15 +18,13 @@
 	<div class="container ">
 		<div id = "header" class = "page-header jumbotron divTheme">
 			<img id = "logo" src="res\img\bake_logo.png"/>
-				<div class="btn-group btn-group-justified ">
-					<a href="#" class="btn btn-default buttonTheme">Home</a>
-					<a href="#" class="btn btn-default buttonTheme">About Us</a>
-					<a href="#" class="btn btn-default buttonTheme">BakeGallery</a>
-					<a href="#" class="btn btn-default buttonTheme">Contact US</a>
-				</div>
-			
+			<div class="btn-group btn-group-justified ">
+				<a href="#" class="btn btn-default buttonTheme">Home</a>
+				<a href="#" class="btn btn-default buttonTheme">About Us</a>
+				<a href="#" class="btn btn-default buttonTheme">BakeGallery</a>
+				<a href="#" class="btn btn-default buttonTheme">Contact US</a>
+			</div>			
 		</div>
-
 	</div>
 
 	<div class ="container ">
@@ -74,79 +73,83 @@
 
 				</div>
 			</center>
+			<div id="about_us" tabindex="1">
+				<h3 class="heading">About Us</h3>
+				<p class="section">
+					Hola Amigos, Welcome to Bake My Day. sddsdsfdsfdssddfds grgrg fdfgsare fbdfgdfg yhrhrgr
+					fdgdfdf werwer hfghj werewrwe  sdfwrf wweewrew gegr tdsfdfsdsf hyjjykyuk dfgerfwewe efee
+					fsdfsf eretrenhyj yjytjy yuukukuk jujyk fwefwf ghjhgj kuiluikiuk dferfwer dwedwer rgergr
+					dssdss dsdss sdsadsadsa.
 
-			<h3 class="heading">About Us</h3>
-			<p class="section">
-				Hola Amigos, Welcome to Bake My Day. sddsdsfdsfdssddfds grgrg fdfgsare fbdfgdfg yhrhrgr
-				fdgdfdf werwer hfghj werewrwe  sdfwrf wweewrew gegr tdsfdfsdsf hyjjykyuk dfgerfwewe efee
-				fsdfsf eretrenhyj yjytjy yuukukuk jujyk fwefwf ghjhgj kuiluikiuk dferfwer dwedwer rgergr
-				dssdss dsdss sdsadsadsa.
+					<br><br>
 
-				<br><br>
+					Hola Amigos, Welcome to Bake My Day. sddsdsfdsfdssddfds grgrg fdfgsare fbdfgdfg yhrhrgr
+					fdgdfdf werwer hfghj werewrwe  sdfwrf wweewrew gegr tdsfdfsdsf hyjjykyuk dfgerfwewe efee
+					fsdfsf eretrenhyj yjytjy yuukukuk jujyk fwefwf ghjhgj kuiluikiuk dferfwer dwedwer rgergr
+					dssdss dsdss sdsadsadsa.
 
-				Hola Amigos, Welcome to Bake My Day. sddsdsfdsfdssddfds grgrg fdfgsare fbdfgdfg yhrhrgr
-				fdgdfdf werwer hfghj werewrwe  sdfwrf wweewrew gegr tdsfdfsdsf hyjjykyuk dfgerfwewe efee
-				fsdfsf eretrenhyj yjytjy yuukukuk jujyk fwefwf ghjhgj kuiluikiuk dferfwer dwedwer rgergr
-				dssdss dsdss sdsadsadsa.
+					<br><br>
 
-				<br><br>
+					Hola Amigos, Welcome to Bake My Day. sddsdsfdsfdssddfds grgrg fdfgsare fbdfgdfg yhrhrgr
+					fdgdfdf werwer hfghj werewrwe  sdfwrf wweewrew gegr tdsfdfsdsf hyjjykyuk dfgerfwewe efee
+					fsdfsf eretrenhyj yjytjy yuukukuk jujyk fwefwf ghjhgj kuiluikiuk dferfwer dwedwer rgergr
+					dssdss dsdss sdsadsadsa.
+				</p>
+			</div>
 
-				Hola Amigos, Welcome to Bake My Day. sddsdsfdsfdssddfds grgrg fdfgsare fbdfgdfg yhrhrgr
-				fdgdfdf werwer hfghj werewrwe  sdfwrf wweewrew gegr tdsfdfsdsf hyjjykyuk dfgerfwewe efee
-				fsdfsf eretrenhyj yjytjy yuukukuk jujyk fwefwf ghjhgj kuiluikiuk dferfwer dwedwer rgergr
-				dssdss dsdss sdsadsadsa.
-
-			</p>
-
-			<h3 class="heading">Contact Us</h3>
-			<div class="section">
-				<div class="row">
-					<div class="col-sm-6" id="contactform"> 
-
+			<div id="contact_us" tabindex="2">
+				<h3 class="heading">Contact Us</h3>
+				<div class="section">
+					<div class="row">
 						<form role="form" name="userForm" ng-submit="contactUser(userInfo)">
-							<div class="form-group" ng-controller="contactCtrl">
 
-								<label for="name">Name* :</label>
-								<input type="text" 
-								name="fullName" 
-								class="form-control"
-								ng-model="userInfo.name" 
-								id="email" 
-								placeholder="Enter name" required="required"/>
+							<div class="col-sm-6" id="contactform"> 
 
-								<label for="email">Email* :</label>
-								<input type="email"
-								name="email" 
-								class="form-control" 
-								ng-model="userInfo.email"
-								id="email" 
-								placeholder="Enter email">
+								<div class="form-group" ng-controller="contactCtrl">
 
-								<label for="phone">Phone :</label>
-								<input type="text"
-								name="phoneNum" 
-								class="form-control" 
-								ng-model="userInfo.phone"
-								id="phone" 
-								placeholder="Enter phone number">
+									<label for="name">Name* :</label>
+									<input type="text" 
+									name="fullName" 
+									class="form-control"
+									ng-model="userInfo.name" 
+									id="email" 
+									placeholder="Enter name" required="required"/>
 
+									<label for="email">Email* :</label>
+									<input type="email"
+									name="email" 
+									class="form-control" 
+									ng-model="userInfo.email"
+									id="email" 
+									placeholder="Enter email">
+
+									<label for="phone">Phone :</label>
+									<input type="text"
+									name="phoneNum" 
+									class="form-control" 
+									ng-model="userInfo.phone"
+									id="phone" 
+									placeholder="Enter phone number">
+
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox"> Remember me</label>
+								</div>
+								<button type="submit" class="btn btn-default">Submit</button>
 							</div>
-							<div class="checkbox">
-								<label><input type="checkbox"> Remember me</label>
+							<div class="col-sm-4" id="contactform"> 
+								<p>
+									Thank you getting in touch with us!!
+									Someone will contact you within 24 hours.
+								</p> 
 							</div>
-							<button type="submit" class="btn btn-default">Submit</button>
+
 						</form>
-					</div>
 
-					<div class="col-sm-4"> 
-						<p>
-							Thank you getting in touch with us!!
-							Someone will contact you within 24 hours.
-						</p> 
 					</div>
+				</div> 
 
-				</div>
-			</div> 
+			</div>
 		</div>
 	</body>
 	</html>
