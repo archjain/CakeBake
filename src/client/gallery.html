@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html language="en" ng-app='galApp' ng-cloak>
+<head>
+    <title>Bake My Day</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css\index.css">    
+    <link rel="stylesheet" type="text/css" href="css\application.css"> 
+    <link rel="stylesheet" type="text/css" href="css\gal.css">  
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js\gal.js" type="text/javascript"></script>
+    <script> 
+
+</script> 
+
+</head>
+<body>
+<div class="container ">
+        <div id = "header" class = "page-header jumbotron divTheme">
+            <img id = "logo" src="res\img\bake_logo.png"/>
+            <div class="btn-group btn-group-justified ">
+                <a href="#" class="btn btn-default buttonTheme">Home</a>
+                <a href="#" class="btn btn-default buttonTheme">About Us</a>
+                <a href="#" class="btn btn-default buttonTheme">BakeGallery</a>
+                <a href="gallery.html" class="btn btn-default buttonTheme">Contact US</a>
+            </div>          
+        </div>
+    </div> 
+
+<div class="container">
+
+    <div class="row divTheme" ng-controller="galCtrl">
+        <div id ="gal" class="col-sm-4 well" ng-repeat="item in itemList" style="padding-left:10px;padding-right:10px;padding-bottom:10px;padding-top:10px; "> 
+         <img class = "galImg"src="res\img\GalImg\{{item.img}}"> </div>
+    </div>
+
+</div>
+
+
+</body>
+
+</html>
