@@ -7,14 +7,13 @@
 }
 
 #logo {
-	max-height: 100%;
-	max-width: 100%;
+	max-height: 80%;
+	max-width: 80%;
 	min-width: 25%
 }
 
 .divTheme{
 	background-color:#ff9999;
-
 }
 
 .buttonTheme{
@@ -22,4 +21,16 @@
 	font-weight: bold;
 	font-size: 20px;
 	color:white;
+}
+
+#footer {
+	height: 50px;
+	min-height: 25px;
+	max-height: 50px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 14px;
+	font-family: cursive verdana;
+	padding-top: 14px;
+	padding-bottom: 12px;
 }
