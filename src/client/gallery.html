@@ -28,15 +28,15 @@
                 <a href="#" class="btn btn-default buttonTheme">Home</a>
                 <a href="#" class="btn btn-default buttonTheme">About Us</a>
                 <a href="#" class="btn btn-default buttonTheme">BakeGallery</a>
-                <a href="#" class="btn btn-default buttonTheme">Contact US</a>
+                <a href="gallery.html" class="btn btn-default buttonTheme">Contact US</a>
             </div>          
         </div>
     </div> 
 
 <div class="container">
 
-    <div class="row" ng-controller="galCtrl">
-        <div class="col-sm-4 divTheme" ng-repeat="item in itemList" style="padding-left:10px;padding-right:10px;padding-bottom:10px;padding-top:10px; "> 
+    <div class="row divTheme" ng-controller="galCtrl">
+        <div id ="gal" class="col-sm-4 well" ng-repeat="item in itemList" style="padding-left:10px;padding-right:10px;padding-bottom:10px;padding-top:10px; "> 
          <img class = "galImg"src="res\img\GalImg\{{item.img}}"> </div>
     </div>
 
