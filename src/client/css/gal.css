@@ -3,11 +3,27 @@
   height: 350px;
   max-height: 350px;
   max-width:350px;
-
+display:inline-block;position:relative;
 }
 
 .well{
 	
 	background-color:#ff9999;	
+	
+}
+.cartButton {
+	position:absolute;
+	top:0;
+	right:0;
+	background-color:#ff7373;
+}
+.itemInfo{
+	text-transform: capitalize;
+	font-size: 20px;
+	word-wrap: break-word;
+}
+.ingredButton{
+	
+	border-color: black;
 	
 }
