@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='homeapp' ng-cloak>
+<head>
+
+	<!-- References a Handlebars partial in views/partials/head.handlebars -->
+	{{>head}}
+
+	<title>Bake My Day</title>
+</head>
+
+<body>
+
+	<!-- References a Handlebars partial in views/partials/bsnavbar.handlebars -->
+	{{>navbar}}
+
+	<!-- The HTML for each view goes here -->
+	<div class="container">
+		{{{body}}}
+	</div>
+
+	<!-- Footer section of the page -->
+	{{>footer}}
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<script src="js\home.js" type="text/javascript"></script>
+
+</body>
+</html>
