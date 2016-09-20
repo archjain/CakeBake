@@ -11,7 +11,7 @@ var users = require('./routes/users');
 var app = express();
 app.disable('x-powered-by');
 
-var handlebars = require('express-handlebars').create({defaultLayout:'home'});
+var handlebars = require('express-handlebars').create({defaultLayout:'main'});
  
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -20,7 +20,7 @@ app.set('view engine', 'handlebars');
 
 
 app.use(favicon());
-//app.use(logger('dev'));
+app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
