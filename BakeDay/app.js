@@ -11,7 +11,7 @@ var users = require('./routes/users');
 var app = express();
 app.disable('x-powered-by');
 
-var handlebars = require('express-handlebars').create({defaultLayout:'home'});
+var handlebars = require('express-handlebars').create({defaultLayout:'main'});
  
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
