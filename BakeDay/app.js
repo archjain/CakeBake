@@ -20,7 +20,7 @@ app.set('view engine', 'handlebars');
 
 
 app.use(favicon());
-app.use(logger('dev'));
+//app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
@@ -31,45 +31,32 @@ app.use('/users', users);
 
 app.set('port', process.env.PORT || 3000);
 
-/// catch 404 and forwarding to error handler
-app.use(function(req, res, next) {
-    var err = new Error('Not Found');
-    err.status = 404;
-    next(err);
+app.use(function(req, res, next){
+  console.log('Looking for URL : ' + req.url);
+  next();
 });
 
-/// error handlers
-
-// development error handler
-// will print stacktrace
-if (app.get('env') === 'development') {
-    app.use(function(err, req, res, next) {
-        res.status(err.status || 500);
-        res.render('error', {
-            message: err.message,
-            error: err
-        });
-    });
-}
-
-// production error handler
-// no stacktraces leaked to user
-app.use(function(err, req, res, next) {
-    res.status(err.status || 500);
-    res.render('error', {
-        message: err.message,
-        error: {}
-    });
+// Catches the error and logs it and then continues
+// down the pipeline
+app.use(function(err, req, res, next){
+  console.log('Error : ' + err.message);
+  next();
 });
 
 
-//returning home page on server start
-app.get('/', function(req, res){
- 
-  // Point at the home.handlebars view
-  res.render('home');
-});
+/// Error handlers
+// Defines a custom 404 Page and we use app.use because
+// the request didn't match a route (Must follow the routes)
+app.use(function(req, res) {
+  // Define the content type
+  res.type('text/html');
 
+  // The default status is 200
+  res.status(404);
+
+  // Point at the 404.handlebars view
+  res.render('404');
+});
 
 module.exports = app;
 
