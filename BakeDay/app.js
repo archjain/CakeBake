@@ -43,7 +43,11 @@ app.use(function(err, req, res, next){
   next();
 });
 
-
+app.get('/menu', function(req, res){
+ 
+  // Point at the home.handlebars view
+  res.render('menu');
+});
 /// Error handlers
 // Defines a custom 404 Page and we use app.use because
 // the request didn't match a route (Must follow the routes)

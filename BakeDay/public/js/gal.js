@@ -1,4 +1,4 @@
-var app = angular.module('galApp',['ngRoute']);
+var app = angular.module('galApp',[]);
 
 app.controller('galCtrl',function($scope){
 

@@ -1,0 +1,23 @@
+<div class="row divTheme" ng-controller="galCtrl">
+            <div id ="gal" class="col-sm-4 well" ng-repeat="item in itemList"  "> 
+               <img class = "galImg" src="res\img\GalImg\{{item.img}}"> 
+               <a href="#" class=" cartButton btn btn-default buttonTheme">Add to cart</a>
+               <br>
+               <div class="row itemInfo">
+                   <div class="col-sm-6">
+                       {{item.name}}
+                   </div> 
+                   <div class="col-sm-6 text-right" >
+                       {{item.price }}
+                   </div>
+               </div>
+
+               <div class="row itemInfo" >
+                   <div class="col-sm-12">
+                     <kbd>Ingredients</kbd><small>  {{item.ingredients}}</small>
+                 </div> 
+                 
+             </div>
+             
+         </div>
+     </div>
